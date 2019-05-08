@@ -85,3 +85,16 @@ func Float64ToNull(f float64) sql.NullFloat64 {
 
 	return r
 }
+
+// BoolToNull devuelve una estructura nil si el puntero al booleano es nil.
+// Sólo funciona con punteros a bool.
+func BoolToNull(b *bool) sql.NullBool {
+	r := sql.NullBool{}
+
+	if b != nil {
+		r.Bool = *b
+		r.Valid = true
+	}
+
+	return r
+}
