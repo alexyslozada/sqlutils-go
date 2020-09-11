@@ -1,4 +1,4 @@
-package sqlutil_go
+package sqlutils_go
 
 import (
 	"database/sql"
