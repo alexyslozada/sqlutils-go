@@ -1,4 +1,4 @@
-module github.com/alexyslozada/sqlutils-go
+module github.com/alexyslozada/sqlutils-go/v2
 
 go 1.14
 
